@@ -1,14 +1,15 @@
 import React from 'react';  
 import "./Login.css";
+import {loginUrl} from './spotify';
 
 function Login() {
     return (
         <div className="login"> 
             <img
-             src="https://image.jimcdn.com/app/cms/image/transf/none/path/s680f3df46a487bb1/image/i35250e2b8b88daa7/version/1532172546/image.jpg" 
+             src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80" 
              alt=""
              />      
-            <a>LOGIN WITH SPOTIFY</a>  
+            <a href={loginUrl}>LOGIN WITH SPOTIFY</a>  
 
         </div>
     )

@@ -1,9 +1,16 @@
-import React from "react";
+import React , { useEffect } from "react";
 import './App.css';
 import Login from './Login';
+import {getTokenFromUrl} from "./spotify";
 
 function App() {
-  return (
+  
+    useEffect(() => {
+      const token = getTokenFromUrl();
+      console.log("i have a token : point" ,token);
+    }, [])
+
+return (
     <div className="app">
       <Login/>
     </div>
