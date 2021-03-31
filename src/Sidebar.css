@@ -1,5 +1,4 @@
-.sidebar {
-    
+.sidebar { 
     height: 100vh;
     flex:0.2;
     color: white;
@@ -21,6 +20,4 @@
     margin-left: 10px;
     padding:5px;
     font-size:12px;
-
-
 }
