@@ -43,8 +43,15 @@ function App() {
             dispatch({
               type:"SET_PLAYLISTS",
               playlists,
+            });
+          });
+
+          spotify.getPlaylist('37i9dQZEVXcTz2WldqrBi6').then(response => 
+             dispatch({
+              type:"SET_DISCOVER_WEEKLY",
+              discover_weekly:response,
             })
-          })
+            )
       }
     }, []);
 
