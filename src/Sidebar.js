@@ -5,7 +5,10 @@ import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 import { useDataLayervalue } from './DataLayer';
-
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
+import MusicOffIcon from '@material-ui/icons/MusicOff';
+import MusicVideoIcon from '@material-ui/icons/MusicVideo';
 
 function Sidebar() {
    const[{ playlists },dispatch] = useDataLayervalue();
@@ -22,6 +25,18 @@ function Sidebar() {
             {playlists?.items?.map(playlist => (
               <SidebarOption title={playlist.name}/>
             ))}
+                <hr/>
+            <div className="sidebar__icons">
+
+              <SidebarOption Icon={InstagramIcon} title="Link you IG"/>
+              
+              <SidebarOption Icon={LibraryAddIcon} title="Add Library"/>
+              
+              <SidebarOption Icon={MusicOffIcon} title="Off Music"/>
+
+              <SidebarOption Icon={ MusicVideoIcon} title="Video on"/>
+            </div>
+
            
 
         </div>
